@@ -1,0 +1,194 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Flutter: Clean Project",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["clean"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Flutter: Get Dependencies",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["pub", "get"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Flutter: Run Debug Mode",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["run", "--debug"],
+            "group": "build",
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Flutter: Run Release Mode",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["run", "--release"],
+            "group": "build",
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Flutter: Build APK",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["build", "apk"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Flutter: Build iOS",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["build", "ios"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Flutter: Run Tests",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Authentication Flow",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_AUTH=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: User Profile Management",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_PROFILE=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Car Listing Features",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_CARS=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Bidding System",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_BIDDING=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Chat System",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_CHAT=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Event Management",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_EVENTS=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Admin Dashboard",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_ADMIN=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Test: Search Functionality",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["test", "--dart-define=FLUTTER_TEST_SEARCH=true"],
+            "group": "test",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Dart: Analyze Code",
+            "type": "shell",
+            "command": "dart",
+            "args": ["analyze"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Dart: Format Code",
+            "type": "shell",
+            "command": "dart",
+            "args": ["format", "lib/", "test/"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Performance: Profile App",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["run", "--profile"],
+            "group": "build",
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Maintenance: Update Dependencies",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["pub", "upgrade"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Maintenance: Check Outdated Packages",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["pub", "outdated"],
+            "group": "build",
+            "isBackground": false,
+            "problemMatcher": []
+        },
+        {
+            "label": "Development: Hot Reload Watch",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["run", "--hot"],
+            "group": "build",
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ]
+}

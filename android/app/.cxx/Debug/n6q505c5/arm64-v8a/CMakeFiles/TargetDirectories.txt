@@ -1,0 +1,2 @@
+/Users/ameerhamza/Desktop/cbazaar/android/app/.cxx/Debug/n6q505c5/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/ameerhamza/Desktop/cbazaar/android/app/.cxx/Debug/n6q505c5/arm64-v8a/CMakeFiles/rebuild_cache.dir

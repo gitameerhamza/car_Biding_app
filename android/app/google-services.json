@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295788110602",
+    "project_id": "carbazar-a656d",
+    "storage_bucket": "carbazar-a656d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295788110602:android:bcbb7c8a4704553b2950f3",
+        "android_client_info": {
+          "package_name": "com.example.cbazaar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYuF7YSzpbJUZt1lPjNLmw3GafKo5VMYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

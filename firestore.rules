@@ -1,0 +1,54 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Admin collection - only accessible by authenticated admin users
+    match /admins/{adminId} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == adminId || 
+         exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+    
+    // Users collection - admins can manage, users can manage their own data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == userId || 
+         exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+    
+    // Cars collection - admins can manage, users can manage their own cars
+    match /cars/{carId} {
+      allow read: if true; // Anyone can read car listings
+      allow write: if request.auth != null && 
+        (resource.data.user_id == request.auth.uid || 
+         exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+    
+    // Bids collection - admins can manage, users can manage their own bids
+    match /bids/{bidId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && 
+        (resource.data.bidder_id == request.auth.uid || 
+         exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+    
+    // Events collection - admins can manage, users can read
+    match /events/{eventId} {
+      allow read: if true;
+      allow write: if request.auth != null && 
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+    
+    // Chat collections - users can access their own chats, admins can access all
+    match /chats/{chatId} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid in resource.data.participants || 
+         exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+    
+    // All other collections - require authentication
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

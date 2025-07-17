@@ -1,0 +1,2 @@
+/Users/ameerhamza/Desktop/cbazaar/android/app/.cxx/RelWithDebInfo/43lb47c3/x86/CMakeFiles/edit_cache.dir
+/Users/ameerhamza/Desktop/cbazaar/android/app/.cxx/RelWithDebInfo/43lb47c3/x86/CMakeFiles/rebuild_cache.dir
