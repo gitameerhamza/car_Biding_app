@@ -67,7 +67,7 @@ C-Bazaar is a comprehensive Flutter application for car trading, featuring user 
 
 1. **Clone the repository:**
    ```sh
-   git clone <repo-url>
+   git clone (https://github.com/gitameerhamza/car_Biding_app)
    cd cbazaar
    ```
 2. **Install dependencies:**
@@ -128,4 +128,4 @@ This project is licensed under the MIT License.
 ## Contact & Support
 
 - For questions, issues, or feature requests, please open an [issue](https://github.com/gitameerhamza/car_Biding_app/issues).
-- Maintainer: [Ameer Hamza](mailto:ameerhamza@example.com)
+- Maintainer: [Ameer Hamza](mailto:ameerhamza.codes@gmail.com)
