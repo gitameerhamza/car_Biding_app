@@ -9,7 +9,9 @@ plugins {
 android {
     namespace = "com.example.cbazaar"
     compileSdk = 35
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "25.2.9519653"
+
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
