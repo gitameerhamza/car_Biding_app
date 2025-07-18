@@ -46,6 +46,9 @@ app.*.map.json
 # Firebase/Secrets
 android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
+.firebaserc
+firebase.json
+ios/firebase_app_id_file.json
 
 # Coverage
 coverage/
