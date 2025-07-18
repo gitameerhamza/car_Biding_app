@@ -110,6 +110,8 @@ For major changes, please open an issue first to discuss what you would like to 
 
 Please read our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md) (if available).
 
+## 🎥 Project Demo Video
+(Carbazaar.mp4)
 ## License
 
 This project is licensed under the MIT License.
