@@ -110,17 +110,6 @@ For major changes, please open an issue first to discuss what you would like to 
 
 Please read our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md) (if available).
 
-
-## Documentation
-
-- [User System Documentation](USER_SYSTEM_DOCUMENTATION.md)
-- [Admin Dashboard Guide](ADMIN_SIMPLIFICATION_GUIDE.md)
-- [Bidding System Review](BIDDING_SYSTEM_COMPREHENSIVE_REVIEW.md)
-- [Chat Feature Implementation](CHAT_FEATURE_IMPLEMENTATION.md)
-- [Functionality Documentation](FUNCTIONALITY_DOCUMENTATION.md)
-- See other `*_DOCUMENTATION.md` and `.md` files for more details.
-
-
 ## License
 
 This project is licensed under the MIT License.
